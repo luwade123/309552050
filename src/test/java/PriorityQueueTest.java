@@ -14,11 +14,11 @@ public class PriorityQueueTest {
 
     public static Stream<Arguments> getParameters(){
         return Stream.of(
-                arguments(new int[]{1,5,2,3}, new int[]{1,2,3,5}),
-                arguments(new int[]{1,43,2,3}, new int[]{1,2,3,43}),
-                arguments(new int[]{1,0,2,3}, new int[]{0,1,2,3}),
-                arguments(new int[]{1,9,7,6}, new int[]{1,6,7,9}),
-                arguments(new int[]{1,2,3,4}, new int[]{1,2,3,4})
+                arguments(new int[]{1,5,2,3}, new int[]{1,2,5,3}),
+                arguments(new int[]{1,43,2,3}, new int[]{1,2,43,3}),
+                arguments(new int[]{1,0,2,3}, new int[]{0,2,3,1}),
+                arguments(new int[]{1,9,7,6}, new int[]{6,1,7,9}),
+                arguments(new int[]{1,2,3,4}, new int[]{2,1,3,4})
         );
 
 
